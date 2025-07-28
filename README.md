@@ -29,7 +29,7 @@ UK-Starwars/
 ├── requirements.txt          # Python package dependencies
 └── README.md                 # Project documentation
 
-
+```text
 ## 🔧 Requirements
 
 Before running the tests, install the required tools:
@@ -41,6 +41,7 @@ Before running the tests, install the required tools:
 
 pip install -r requirements.txt
 
+```text
 **▶️ How to Run Tests**
 
 Change directory to the project root and run:
@@ -57,6 +58,7 @@ robot --include "UI" tests/starwars_tests.robot
 
 robot --include "Testcase 3" tests/starwars_tests.robot
 
+```text
 
 ✅ Output Reports
 After running, reports will be available:
