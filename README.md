@@ -10,23 +10,24 @@ It includes both **API** and **UI-based test validations** leveraging the [SWAPI
 
 ## 📁 Folder Structure
 
+```text
 starwars/
+├── lib/                      # Python libraries
+│   ├── APIKeywords.py        # API-related keyword implementations
+│   ├── UIKeywords.py         # UI-related keyword implementations
+│   ├── LoggerUtil.py         # Custom logger utilities
+│   └── swapi_client.py       # Handles SWAPI HTTP interactions
 │
-├── lib/ # Python libraries used by Robot Framework
-│ ├── APIKeywords.py
-│ ├── UIKeywords.py
-│ ├── LoggerUtil.py
-│ └── SWAPIClient.py
+├── tests/                    # Robot tests and test data
+│   ├── tests.robot           # All test cases (UI & API)
+│   └── test_data.yaml        # Input variables and data
 │
-├── tests/ # Robot Framework test files and data
-│ ├── starwars_tests.robot
-│ └── test_data.yaml
+├── .github/
+│   └── workflows/
+│       └── run-tests.yml     # GitHub Actions CI configuration
 │
-├── .github/workflows/ # GitHub Actions CI workflow
-│ └── run-tests.yml
-│
-├── requirements.txt # Python dependencies
-└── README.md # Project documentation
+├── requirements.txt          # Python package dependencies
+└── README.md                 # Project documentation
 
 
 ## 🔧 Requirements
