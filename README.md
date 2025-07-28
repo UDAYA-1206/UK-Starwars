@@ -16,7 +16,7 @@ UK-Starwars/
 │   ├── APIKeywords.py        # API-related keyword implementations
 │   ├── UIKeywords.py         # UI-related keyword implementations
 │   ├── LoggerUtil.py         # Custom logger utilities
-│   └── swapi_client.py       # Handles SWAPI HTTP interactions
+│   └── SWAPIClient.py       # Handles SWAPI HTTP interactions
 │
 ├── tests/                    # Robot tests and test data
 │   ├── tests.robot           # All test cases (UI & API)
