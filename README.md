@@ -11,7 +11,7 @@ It includes both **API** and **UI-based test validations** leveraging the [SWAPI
 ## 📁 Folder Structure
 
 ```text
-starwars/
+UK-Starwars/
 ├── lib/                      # Python libraries
 │   ├── APIKeywords.py        # API-related keyword implementations
 │   ├── UIKeywords.py         # UI-related keyword implementations
