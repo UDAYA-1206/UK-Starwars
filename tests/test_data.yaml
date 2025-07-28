@@ -1,0 +1,10 @@
+api_base: "https://swapi.dev/api"
+expected_movie_count: 6
+third_movie_index: 3
+third_movie_director: "Richard Marquand"
+fifth_movie_index: 5
+invalid_producers: "Gary Kurtz, George Lucas"
+species_movie_title: "The Empire Strikes Back"
+expected_species: "Wookie"
+planet_movie_title: "The Phantom Menace"
+unexpected_planet: "Kamino"
