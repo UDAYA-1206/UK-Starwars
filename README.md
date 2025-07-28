@@ -9,7 +9,7 @@ It includes both **API** and **UI-based test validations** leveraging the [SWAPI
 ### 📥 Clone the Repository
 
 ## 📁 Folder Structure
-
+```text
 UK-Starwars/
 ├── lib/                      # Python libraries
 │   ├── APIKeywords.py        # API-related keyword implementations
@@ -27,6 +27,8 @@ UK-Starwars/
 │
 ├── requirements.txt          # Python package dependencies
 └── README.md                 # Project documentation
+
+```
 
 ## 🔧 Requirements
 
