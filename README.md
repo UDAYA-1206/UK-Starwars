@@ -20,11 +20,6 @@ UK-Starwars/
 ├── tests/                    # Robot tests and test data
 │   ├── tests.robot           # All test cases (UI & API)
 │   └── test_data.yaml        # Input variables and data
-│
-├── .github/
-│   └── workflows/
-│       └── run-tests.yml     # GitHub Actions CI configuration
-│
 ├── requirements.txt          # Python package dependencies
 └── README.md                 # Project documentation
 
