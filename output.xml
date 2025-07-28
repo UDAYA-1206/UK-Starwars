@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.1 on darwin)" generated="2025-07-28T15:27:14.995520" rpa="false" schemaversion="5">
+<suite id="s1" name="Starwars Tests" source="/Users/uiyappan/Desktop/starwars/tests/starwars_tests.robot">
+<test id="s1-t1" name="Verify Movie Count" line="8">
+<kw name="Verify Movies Count" owner="APIKeywords">
+<msg time="2025-07-28T15:27:16.265221" level="INFO">✅ PASS: Movies count is 6 as expected</msg>
+<arg>${api_base}</arg>
+<arg>${expected_movie_count}</arg>
+<status status="PASS" start="2025-07-28T15:27:15.079757" elapsed="1.185673"/>
+</kw>
+<tag>API</tag>
+<tag>Testcase 1</tag>
+<status status="PASS" start="2025-07-28T15:27:15.079328" elapsed="1.186416"/>
+</test>
+<test id="s1-t2" name="Verify Director Of Third Movie" line="12">
+<kw name="Verify Movie Director" owner="APIKeywords">
+<msg time="2025-07-28T15:27:17.224423" level="INFO">✅ PASS: Director is Richard Marquand as expected</msg>
+<arg>${api_base}</arg>
+<arg>${third_movie_index}</arg>
+<arg>${third_movie_director}</arg>
+<status status="PASS" start="2025-07-28T15:27:16.266935" elapsed="0.957755"/>
+</kw>
+<tag>API</tag>
+<tag>Testcase 2</tag>
+<status status="PASS" start="2025-07-28T15:27:16.266471" elapsed="0.958737"/>
+</test>
+<test id="s1-t3" name="Verify Producers Not Present" line="16">
+<kw name="Verify Producer Not Match" owner="APIKeywords">
+<msg time="2025-07-28T15:27:18.425851" level="INFO">✅ PASS: Producers do not match disallowed value: Gary Kurtz, George Lucas</msg>
+<arg>${api_base}</arg>
+<arg>${fifth_movie_index}</arg>
+<arg>${invalid_producers}</arg>
+<status status="PASS" start="2025-07-28T15:27:17.226982" elapsed="1.199117"/>
+</kw>
+<tag>API</tag>
+<tag>Testcase 3</tag>
+<status status="PASS" start="2025-07-28T15:27:17.226223" elapsed="1.200404"/>
+</test>
+<test id="s1-t4" name="Verify Species Present In Movie" line="20">
+<kw name="Verify Species In Movie" owner="UIKeywords">
+<msg time="2025-07-28T15:27:19.897099" level="INFO">✅ PASS: Species Wookie found in The Empire Strikes Back</msg>
+<arg>${api_base}</arg>
+<arg>${species_movie_title}</arg>
+<arg>${expected_species}</arg>
+<status status="PASS" start="2025-07-28T15:27:18.428149" elapsed="1.469400"/>
+</kw>
+<tag>Testcase 4</tag>
+<tag>UI</tag>
+<status status="PASS" start="2025-07-28T15:27:18.427541" elapsed="1.470676"/>
+</test>
+<test id="s1-t5" name="Verify Planet Not Present In Movie" line="24">
+<kw name="Verify Planet Not In Movie" owner="UIKeywords">
+<msg time="2025-07-28T15:27:21.359402" level="INFO">✅ PASS: Planet Kamino is not present in The Phantom Menace as expected</msg>
+<arg>${api_base}</arg>
+<arg>${planet_movie_title}</arg>
+<arg>${unexpected_planet}</arg>
+<status status="PASS" start="2025-07-28T15:27:19.900880" elapsed="1.458614"/>
+</kw>
+<tag>Testcase 5</tag>
+<tag>UI</tag>
+<status status="PASS" start="2025-07-28T15:27:19.899689" elapsed="1.459958"/>
+</test>
+<test id="s1-t6" name="Verify Sorted Last Movie Title" line="28">
+<kw name="Verify Sorted Last Movie Title" owner="UIKeywords">
+<msg time="2025-07-28T15:27:22.363287" level="INFO">✅ PASS: Last movie title after sort is 'The Phantom Menace'</msg>
+<arg>${api_base}</arg>
+<arg>${planet_movie_title}</arg>
+<status status="PASS" start="2025-07-28T15:27:21.360232" elapsed="1.003344"/>
+</kw>
+<tag>Testcase 6</tag>
+<tag>UI</tag>
+<status status="PASS" start="2025-07-28T15:27:21.359989" elapsed="1.004117"/>
+</test>
+<status status="PASS" start="2025-07-28T15:27:14.996779" elapsed="7.368425"/>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="3" fail="0" skip="0">API</stat>
+<stat pass="1" fail="0" skip="0">Testcase 1</stat>
+<stat pass="1" fail="0" skip="0">Testcase 2</stat>
+<stat pass="1" fail="0" skip="0">Testcase 3</stat>
+<stat pass="1" fail="0" skip="0">Testcase 4</stat>
+<stat pass="1" fail="0" skip="0">Testcase 5</stat>
+<stat pass="1" fail="0" skip="0">Testcase 6</stat>
+<stat pass="3" fail="0" skip="0">UI</stat>
+</tag>
+<suite>
+<stat name="Starwars Tests" id="s1" pass="6" fail="0" skip="0">Starwars Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
